@@ -1,6 +1,13 @@
-cmake_minimum_required(VERSION 3.15)
-project(lexical_analysis C)
+cmake_minimum_required(VERSION 3.16)
+project(lexical_analysis)
 
-set(CMAKE_C_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
 
-add_executable(lexical_analysis main.c tokens.h)
+include_directories(.)
+
+add_executable(lexical_analysis
+        img/shell_capture.gif
+        main.c
+        perfect.txt
+        README.md
+        tokens.h)
